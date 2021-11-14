@@ -1,0 +1,49 @@
+{
+  "name": "@awint/efs-construct",
+  "version": "0.1.0",
+  "description": "AWS CDK Construct for creating elastic file system (efs) Services",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean",
+    "watch": "tsc -b -w",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/awintbit/aws-construct.git",
+    "directory": "packages/efs-construct"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "construct",
+    "efs",
+    "ec2",
+    "docker"
+  ],
+  "author": "Andrew Wint",
+  "license": "Apache-2.0",
+  "homepage": "https://bitbucket.org/awintbit/aws-construct/packages/efs-contruct#readme",
+  "stability": "experimental",
+  "devDependencies": {
+    "@aws-cdk/assert": "1.86.0",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "typescript": "~3.9.7"
+  },
+  "peerDependencies": {
+    "@aws-cdk/core": "1.86.0"
+  },
+  "dependencies": {
+    "@awint/core": "file:../core",
+    "@aws-cdk/aws-ec2": "^1.86.0",
+    "@aws-cdk/aws-ecs": "^1.86.0",
+    "@aws-cdk/aws-efs": "^1.86.0",
+    "@aws-cdk/core": "1.86.0",
+    "@aws-cdk/custom-resources": "^1.86.0"
+  }
+}

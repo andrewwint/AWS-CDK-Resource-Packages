@@ -1,0 +1,59 @@
+{
+  "name": "@awint/fargate",
+  "version": "1.0.0",
+  "description": "AWS CDK Construct for creating Fargate Services",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -b .",
+    "clean": "tsc -b --clean",
+    "watch": "tsc -b -w",
+    "jsii": "jsii",
+    "package": "jsii-pacmak"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/awintbit/aws-construct.git",
+    "directory": "packages/fargate"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "construct",
+    "fargate",
+    "docker"
+  ],
+  "author": "Andrew Wint",
+  "license": "Apache-2.0",
+  "homepage": "https://bitbucket.org/awintbit/aws-construct/packages/fargate#readme",
+  "stability": "experimental",
+  "jsii": {
+    "outdir": "dist",
+    "versionFormat": "full"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.86.0",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.21",
+    "jest": "^26.6.3",
+    "jsii": "^1.17.1",
+    "jsii-pacmak": "^1.17.1",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@awint/core": "file:../core",
+    "@awint/efs-construct": "file:../efs-construct",
+    "@aws-cdk/aws-certificatemanager": "^1.86.0",
+    "@aws-cdk/aws-ec2": "^1.86.0",
+    "@aws-cdk/aws-ecr": "^1.86.0",
+    "@aws-cdk/aws-ecr-assets": "^1.86.0",
+    "@aws-cdk/aws-ecs": "^1.86.0",
+    "@aws-cdk/aws-ecs-patterns": "^1.86.0",
+    "@aws-cdk/aws-efs": "^1.86.0",
+    "@aws-cdk/aws-logs": "^1.86.0",
+    "@aws-cdk/aws-route53": "^1.86.0",
+    "@aws-cdk/core": "^1.86.0"
+  }
+}
