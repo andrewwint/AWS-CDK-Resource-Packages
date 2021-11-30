@@ -46,7 +46,7 @@ export class BitbucketCodeBuild extends cdk.Construct {
         // Define service role for CodeBuild service
         const serviceRole = iam.Role.fromRoleArn(this,
             "MyCoCoreRole",
-            "arn:aws:iam::790768631355:role/MyCoCoreRole");
+            "arn:aws:iam::123456789:role/MyCoCoreRole");
 
         this.project = new codebuild.Project(this, 'MyCoCodeBuildProject', {
             role: serviceRole,
